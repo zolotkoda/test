@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case - Invalid Login" searchProperties="true" maxResults="0" id="08d06f8e-f7a9-4ca1-a3d4-66de695bb7c7" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Now, what's this? Test Cases that we want to fail?
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case - Invalid Login" searchProperties="true" maxResults="0" id="08d06f8e-f7a9-4ca1-a3d4-66de695bb7c7">
+  <con:description id="fac495ae-d005-4bbe-83c9-c3bccf910535">Now, what's this? Test Cases that we want to fail?
 
                 Yes, sometimes it's a great idea to test that the Web Service fail when it should and fail correctly.
                 Therefore the Test Case will pass if we get fails for every test in the Case.
@@ -19,7 +19,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login wrong username" id="9759f856-e1df-44f2-ab37-c160f3092d43">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login wrong username" outgoingWss="" incomingWss="" id="795c7147-eddf-4be0-bb58-cbde5de5d299" defaultOutgoingWss="" defaultIncomingWss="">
@@ -64,7 +64,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Password without numbers" id="4032426b-9b98-427e-b1a2-173126421f50">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - Password without numbers" outgoingWss="" incomingWss="" id="fc13d12d-a7d1-4ba0-ac22-356e039f6eaa" defaultOutgoingWss="" defaultIncomingWss="">
@@ -109,7 +109,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - To long User/Pass Combo (25)" id="147302d2-3d76-4444-9926-da8e35456a76">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - To long User/Pass Combo (25)" outgoingWss="" incomingWss="" id="d6bc0cc8-4e3f-49d5-9683-363353097c8f" defaultOutgoingWss="" defaultIncomingWss="">
@@ -154,7 +154,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - To short User/Pass Combo (9)" id="bb38f289-7c1e-4ee9-a4a5-ee4ae5c7e7e3">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - To short User/Pass Combo (9)" outgoingWss="" incomingWss="" id="86b4a371-6d8f-4167-a10f-dbafd5aa8f8d" defaultOutgoingWss="" defaultIncomingWss="">
@@ -199,7 +199,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Double Login step 1 (SUCCESS)" id="7723b4de-ce0f-4bc5-a481-754517a948bc">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - Double Login step 1 (SUCCESS)" outgoingWss="" incomingWss="" id="8bcc15d6-71a4-4785-9469-1af10b051e6c" defaultOutgoingWss="" defaultIncomingWss="">
@@ -236,7 +236,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Double Login step 2 (FAIL)" id="67336317-5d62-483a-9532-846701c0c46c">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - Double Login step 2 (FAIL)" outgoingWss="" incomingWss="" id="34cc434d-9baa-46b7-af10-5a2c42886321" defaultOutgoingWss="" defaultIncomingWss="">
@@ -280,7 +280,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="3ceeea75-29eb-40b0-a18f-09815acb14bc">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="652a057b-c73d-44ea-a64d-836218316ff9" defaultOutgoingWss="" defaultIncomingWss="">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login and Logout and Login Again" searchProperties="true" maxResults="0" id="7b15d8f7-95b2-430f-be0c-ce38fb55318f" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Test Case - Simple Login and Logout
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login and Logout and Login Again" searchProperties="true" maxResults="0" id="7b15d8f7-95b2-430f-be0c-ce38fb55318f">
+  <con:description id="5f25b67a-10a5-4cfd-a304-e4b3a602f5f9">Test Case - Simple Login and Logout
 
                 This one is a bit wonky, but has its reasons. What we are testing is that we are able to login again
                 after a logout.
@@ -25,7 +25,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Username and Password" id="5e74ef15-f8af-4e35-bb55-589b678af932">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Username</con:name>
@@ -40,7 +40,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login" id="0a0c1b3e-178a-4094-99dc-afe693dbf049">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login" outgoingWss="" incomingWss="" id="7ddf5cb2-1aa6-4994-a880-c0a17005b3d3" defaultOutgoingWss="" defaultIncomingWss="">
@@ -77,7 +77,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="c310c3c7-d9ed-4a77-99ef-c43c3c14dfd9">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="1abf6514-fc93-49f7-9cc1-26ade573e120" defaultOutgoingWss="" defaultIncomingWss="">
@@ -112,7 +112,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login again" id="9563ee95-eca3-4312-846c-2db115151a26">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login again" outgoingWss="" incomingWss="" id="34946294-76df-445d-b3f6-4d59f61b3390" defaultOutgoingWss="" defaultIncomingWss="">
@@ -149,7 +149,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout again" id="26b892de-58f8-47b9-83ff-279d1afa8db9">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout again" outgoingWss="" incomingWss="" id="a59cb395-1505-4e02-9447-c7f5b6c43186" defaultOutgoingWss="" defaultIncomingWss="">

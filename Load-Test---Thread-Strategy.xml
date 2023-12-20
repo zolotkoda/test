@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:loadUiTest name="Load Test - Thread Strategy" id="48369002-edab-47a0-b428-75a511185da8" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:loadUiTest xmlns:con="http://eviware.com/soapui/config" name="Load Test - Thread Strategy" id="48369002-edab-47a0-b428-75a511185da8">
+  <con:settings id="b2bfd1a6-1acc-4c9a-84d5-7bdda2742bcc">
     <con:setting id="soapUIObjectSourceId">78441527-271d-4161-8d69-ee5f14de1de3</con:setting>
     <con:setting id="convertedFromLoadTestModelItemId">b3d6eb74-c560-4180-b4a2-a4c6fef63caf</con:setting>
     <con:setting id="48369002-edab-47a0-b428-75a511185da8fileName">Load-Test---Thread-Strategy</con:setting>
   </con:settings>
-  <con1:loadui-project id="ba7720fc-5dd1-41d0-b003-081e9b9e51f3" label="Load Test - Thread Strategy" xmlns:con1="http://eviware.com/loadui/config">
+  <con1:loadui-project xmlns:con1="http://eviware.com/loadui/config" id="ba7720fc-5dd1-41d0-b003-081e9b9e51f3" label="Load Test - Thread Strategy">
     <con1:properties>
       <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
       <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -98,7 +98,7 @@
   <con:loadUITestScenario projectId="ba7720fc-5dd1-41d0-b003-081e9b9e51f3" scenarioId="08c58583-84b7-4921-99b6-50d8e0a85b49" name="New Scenario" id="d609a57a-661d-47d4-af2e-95dd9f39cd2e">
     <con:settings/>
   </con:loadUITestScenario>
-  <con:setupScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-  <con:teardownScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:setupScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:teardownScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
   <con:reportParameters/>
 </con:loadUiTest>

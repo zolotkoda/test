@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:loadUiTest name="Load Test - Simple Strategy" id="fa6fdf6d-ee58-479f-aa2e-32241df9c5ac" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:loadUiTest xmlns:con="http://eviware.com/soapui/config" name="Load Test - Simple Strategy" id="fa6fdf6d-ee58-479f-aa2e-32241df9c5ac">
+  <con:settings id="64360562-0bcc-49f0-a213-c368cc38bfb5">
     <con:setting id="soapUIObjectSourceId">78441527-271d-4161-8d69-ee5f14de1de3</con:setting>
     <con:setting id="convertedFromLoadTestModelItemId">2da1096d-75ce-4109-8920-da536ddec4f3</con:setting>
     <con:setting id="fa6fdf6d-ee58-479f-aa2e-32241df9c5acfileName">Load-Test---Simple-Strategy</con:setting>
   </con:settings>
-  <con1:loadui-project id="deca47ad-d8ad-4d1d-800c-219dc6a14ed0" label="Load Test - Simple Strategy" xmlns:con1="http://eviware.com/loadui/config">
+  <con1:loadui-project xmlns:con1="http://eviware.com/loadui/config" id="deca47ad-d8ad-4d1d-800c-219dc6a14ed0" label="Load Test - Simple Strategy">
     <con1:properties>
       <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
       <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -94,7 +94,7 @@
   <con:loadUITestScenario projectId="deca47ad-d8ad-4d1d-800c-219dc6a14ed0" scenarioId="9e510df4-2c72-4ea0-8eca-fe8da4ce9da6" name="New Scenario" id="df317c1c-7e76-4769-967f-8be641b8e187">
     <con:settings/>
   </con:loadUITestScenario>
-  <con:setupScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-  <con:teardownScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:setupScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:teardownScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
   <con:reportParameters/>
 </con:loadUiTest>

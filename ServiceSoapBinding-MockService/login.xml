@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:mockOperation name="login" interface="ServiceSoapBinding" operation="login" id="9482129a-e9a7-4fc0-a4b6-6237963aaf97" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:mockOperation xmlns:con="http://eviware.com/soapui/config" name="login" interface="ServiceSoapBinding" operation="login" id="9482129a-e9a7-4fc0-a4b6-6237963aaf97">
+  <con:settings id="3821fd45-8db4-493a-9abb-9b9abc27ee4e">
     <con:setting id="9482129a-e9a7-4fc0-a4b6-6237963aaf97fileName">login</con:setting>
   </con:settings>
   <con:dispatchPath>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )

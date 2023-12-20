@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="More Than Less Than Test Case" searchProperties="true" maxResults="0" id="4c241e8d-2cf3-4df7-b303-cf7e97f5dfbe" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>This Test Case shows some interesting assertions. Check out the search Test Step, there are
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="More Than Less Than Test Case" searchProperties="true" maxResults="0" id="4c241e8d-2cf3-4df7-b303-cf7e97f5dfbe">
+  <con:description id="101756a3-b52e-40a3-b824-112213ceb23d">This Test Case shows some interesting assertions. Check out the search Test Step, there are
                 two assertions "XPath retrieve sibling value"
                 and "XPath Match More Than Less Than" that shows some interesting ways of using XPath.</con:description>
   <con:settings>
@@ -16,7 +16,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Username and Password" id="74a10789-23a1-4ad1-8844-66ff1e70f460">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Username</con:name>
@@ -35,7 +35,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Wanted Response" id="9c1ef45b-fb78-4774-a590-ae41e7cb7d17">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Item</con:name>
@@ -58,7 +58,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login" id="c5323873-f11a-4f35-9d6b-f2902e9a3877">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login" outgoingWss="" incomingWss="" id="0f99a60a-6117-400e-93ac-39fe32c70def" defaultOutgoingWss="" defaultIncomingWss="">
@@ -95,7 +95,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - search" id="b04c6313-062b-4199-941c-f1a4b35413ee">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - search" outgoingWss="" incomingWss="" id="8a77ed9c-c21d-4b2b-abcb-8575d5f38f59" defaultOutgoingWss="" defaultIncomingWss="">
@@ -166,7 +166,7 @@ Impress the strags with this amazing cloth!</content>
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="823a19ba-81bf-4401-9eed-1bdf9ef28609">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="fa9ad7c5-b6fe-4ba9-9f55-caea9fa755e5" defaultOutgoingWss="" defaultIncomingWss="">

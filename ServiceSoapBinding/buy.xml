@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation action="http://www.soapui.org/sample/buy" name="buy" bindingOperationName="buy" inputName="" isOneWay="false" receivesAttachments="false" sendsAttachments="false" type="Request-Response" id="5c6be0c3-52a9-4e8f-85fa-f139f07f910a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:operation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" action="http://www.soapui.org/sample/buy" name="buy" bindingOperationName="buy" inputName="" isOneWay="false" receivesAttachments="false" sendsAttachments="false" type="Request-Response" id="5c6be0c3-52a9-4e8f-85fa-f139f07f910a">
+  <con:settings id="c8b16cc3-b580-43c1-8d3e-036e52e01705">
     <con:setting id="5c6be0c3-52a9-4e8f-85fa-f139f07f910afileName">buy</con:setting>
   </con:settings>
   <con:call name="buy rq" outgoingWss="" incomingWss="" id="9c69161b-4d30-4804-844e-96e7740c1f4d" defaultOutgoingWss="" defaultIncomingWss="">

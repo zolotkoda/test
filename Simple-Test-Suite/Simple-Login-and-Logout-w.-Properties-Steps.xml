@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login and Logout w. Properties Steps" searchProperties="true" maxResults="0" id="fa5b070e-49dc-4439-ab6c-1439b26bf27e" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Test Case - Simple Login and Logout
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login and Logout w. Properties Steps" searchProperties="true" maxResults="0" id="fa5b070e-49dc-4439-ab6c-1439b26bf27e">
+  <con:description id="09279806-3283-4a17-a874-bbb25d9a127e">Test Case - Simple Login and Logout
 
                 This one is easy...
 
@@ -23,7 +23,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Username and Password" id="064a47ea-ddad-48fc-98db-dce608508c74">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Username</con:name>
@@ -38,7 +38,7 @@
   </con:testStep>
   <con:testStep type="transfer" name="Property Transfer - Move Username and Password" id="20798a7f-6573-4a62-9fed-35de96bf28ef">
     <con:settings/>
-    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertyTransfersStep">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
         <con:name>TransferUser</con:name>
         <con:sourceType>Username</con:sourceType>
@@ -63,7 +63,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login" id="7fca3315-9500-4384-be8e-b72f7ac6c6f4">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login" outgoingWss="" incomingWss="" id="3100839c-d984-4991-afe1-52b1dc4fcaec" defaultOutgoingWss="" defaultIncomingWss="">
@@ -102,7 +102,7 @@
   </con:testStep>
   <con:testStep type="transfer" name="Property Transfer - Move sessionID" id="349f39a5-607e-4bd8-84fb-45b08005e778">
     <con:settings/>
-    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertyTransfersStep">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" transferToAll="false" ignoreEmpty="false">
         <con:name>MoveSessionId</con:name>
         <con:sourceType>Response</con:sourceType>
@@ -119,7 +119,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="d917498a-52c8-40f1-865f-1350d1964362">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="e392e5ca-a4c2-42e6-a4a6-fb7f84b4990f" defaultOutgoingWss="" defaultIncomingWss="">

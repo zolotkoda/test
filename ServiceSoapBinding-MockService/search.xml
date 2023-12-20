@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:mockOperation name="search" interface="ServiceSoapBinding" operation="search" id="edb20425-20fd-421a-855e-2cb249841799" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:mockOperation xmlns:con="http://eviware.com/soapui/config" name="search" interface="ServiceSoapBinding" operation="search" id="edb20425-20fd-421a-855e-2cb249841799">
+  <con:settings id="f5ceadab-2638-41c1-ba1e-e3c4d4c73bbc">
     <con:setting id="edb20425-20fd-421a-855e-2cb249841799fileName">search</con:setting>
   </con:settings>
   <con:dispatchPath>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )

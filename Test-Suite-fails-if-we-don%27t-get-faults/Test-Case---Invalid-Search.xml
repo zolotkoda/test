@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case - Invalid Search" searchProperties="true" maxResults="0" id="78028b99-9b83-4ea7-97ce-703e16fe56bf" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Another batch of Test Cases that we want to fail?
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case - Invalid Search" searchProperties="true" maxResults="0" id="78028b99-9b83-4ea7-97ce-703e16fe56bf">
+  <con:description id="01d16160-0e3c-4b3c-9229-3d575ba007bf">Another batch of Test Cases that we want to fail?
 
                 These tests expands on what we did with "Test Case - Invalid Login" and shows some important test that
                 you always should have.
@@ -25,7 +25,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Correct Session Property" id="77b0d965-5996-4d1c-839e-fae1d0af444a">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Session</con:name>
@@ -36,7 +36,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Correct Search wo Login" id="110d46aa-fe58-4586-b95e-348e84edc2bd">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Correct Search wo Login" outgoingWss="" incomingWss="" id="6fcba7ca-ac6c-4dab-8ecc-b290b7796183" defaultOutgoingWss="" defaultIncomingWss="">
@@ -82,7 +82,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Illegal Search wo Login" id="cec29160-6565-4318-af15-e4611a717429">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Illegal Search wo Login" outgoingWss="" incomingWss="" id="ddf834e8-8913-451c-b3b7-c56906ffc9bf" defaultOutgoingWss="" defaultIncomingWss="">
@@ -128,7 +128,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Empty Search wo. Login" id="110d0c5e-e3a3-4ef2-97c3-563dd3468a51">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Empty Search wo. Login" outgoingWss="" incomingWss="" id="4650945b-b677-42ba-8ea4-eec5cf1fd33b" defaultOutgoingWss="" defaultIncomingWss="">
@@ -174,7 +174,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Illegal Session wo. Login" id="af3c1c1c-b0cb-43e1-89e6-ee486566f9df">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Illegal Session wo. Login" outgoingWss="" incomingWss="" id="d786a017-a03f-4eef-9c30-5be1ef388957" defaultOutgoingWss="" defaultIncomingWss="">
@@ -220,7 +220,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - SQL Injection SearchString wo. Login" id="b988ab26-a0d4-4221-ae69-2b0c7dcb0064">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - SQL Injection SearchString wo. Login" outgoingWss="" incomingWss="" id="db319b51-6694-4774-9f25-4338abe87709" defaultOutgoingWss="" defaultIncomingWss="">
@@ -266,7 +266,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - SQL Injection Session wo. Login" id="b3a14810-f3a3-42de-9208-9611ccd5037b">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - SQL Injection Session wo. Login" outgoingWss="" incomingWss="" id="5904ee1a-ce3a-4c53-b760-1d1ad1f500bc" defaultOutgoingWss="" defaultIncomingWss="">
@@ -312,7 +312,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Double SessionIDs wo. Login" id="19f0c07f-5a6c-4d25-8aaf-340c2f8cd7b8">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Double SessionIDs wo. Login" outgoingWss="" incomingWss="" id="b72dc616-8e00-4fbd-9581-bdaf3f778e38" defaultOutgoingWss="" defaultIncomingWss="">
@@ -361,7 +361,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Login" id="c2a4081a-0620-4296-bc3e-66f66b1a7f5f">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - Login" outgoingWss="" incomingWss="" id="e9e939b0-a8ec-4fcd-8710-71837676ae8c" defaultOutgoingWss="" defaultIncomingWss="">
@@ -400,7 +400,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Illegal Search" id="3229016a-b45a-4884-aecf-2773bd3de89a">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Illegal Search" outgoingWss="" incomingWss="" id="fab25163-33a0-4396-a47a-18c7438734e8" defaultOutgoingWss="" defaultIncomingWss="">
@@ -445,7 +445,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Empty Search" id="e0c84f5c-8f3c-4ea2-921f-4723221c4567">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Empty Search" outgoingWss="" incomingWss="" id="07659208-1fdd-44e2-83f3-f2969ef1ca45" defaultOutgoingWss="" defaultIncomingWss="">
@@ -491,7 +491,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Illegal Session" id="f360dd3e-b45b-4d12-93e8-a66932781b88">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Illegal Session" outgoingWss="" incomingWss="" id="c46bf4ad-5be7-4864-8932-2486a20781da" defaultOutgoingWss="" defaultIncomingWss="">
@@ -537,7 +537,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - SQL Injection SearchString" id="71debe9a-24bd-4a39-a86d-b7dddfc50a2b">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - SQL Injection SearchString" outgoingWss="" incomingWss="" id="338aea04-98ec-4dd9-85de-7b4a8b88e748" defaultOutgoingWss="" defaultIncomingWss="">
@@ -583,7 +583,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - SQL Injection Session" id="085a1037-77e6-4bc7-b1ef-7f93be0f2532">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - SQL Injection Session" outgoingWss="" incomingWss="" id="9f280f5d-caa2-4f3e-bfdd-068224719ad9" defaultOutgoingWss="" defaultIncomingWss="">
@@ -629,7 +629,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Double SessionIDs" id="d6e5aa62-2de5-4ab0-8baa-9e35ba8ad57c">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Double SessionIDs" outgoingWss="" incomingWss="" id="f697e24f-47a7-48a0-b092-a27849cb9178" defaultOutgoingWss="" defaultIncomingWss="">
@@ -678,7 +678,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="99d4e9c7-35bb-4fae-a624-92146ff90dda">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="dca6ce42-b7f2-481d-9b8e-058b57b58d5d" defaultOutgoingWss="" defaultIncomingWss="">
@@ -721,7 +721,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - Correct Search after Logout" id="8e278349-0d78-4096-9a71-326c046ff028">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - Correct Search after Logout" outgoingWss="" incomingWss="" id="910c2093-531b-4bdc-bc7b-9f2d6ad82f35" defaultOutgoingWss="" defaultIncomingWss="">

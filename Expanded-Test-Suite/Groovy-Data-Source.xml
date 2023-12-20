@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="true" name="Groovy Data Source" searchProperties="true" id="032bc2de-4150-4b7f-b790-31f5f370a26d" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Test Case - Search and Buy Test Case
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="true" name="Groovy Data Source" searchProperties="true" id="032bc2de-4150-4b7f-b790-31f5f370a26d" maxResults="0">
+  <con:description id="02db1902-95ce-455a-874b-65bc3ff410e6">Test Case - Search and Buy Test Case
 
                 This test is the third expanded Test Case.
                 This follows up XML Data Source and demonstrates how to use Groovy as a Data Source.
@@ -22,7 +22,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Username and Password" id="716d1acb-80be-45a9-a099-52d669617598">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Username</con:name>
@@ -37,7 +37,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login" id="55afec65-c76d-4dc3-99fe-701e055db054">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login" wssPasswordType="" id="eb6201ff-d06d-42fb-8075-6bf213647b53" defaultOutgoingWss="" defaultIncomingWss="">
@@ -73,7 +73,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - search" id="7ac86ba8-05d2-412d-97e2-235258f6d8c2">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - search" wssPasswordType="" id="bb96a520-c7a4-4657-9eee-015361df44ea" defaultOutgoingWss="" defaultIncomingWss="">
@@ -109,7 +109,7 @@
   </con:testStep>
   <con:testStep type="datasource" name="Data Source: Item Data Source" id="efc616e0-86fe-45e2-867f-de93635e2d0a">
     <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:DataSourceStep">
       <con:dataSource type="Groovy">
         <con:configuration>
           <script>def list = context.myList
@@ -134,7 +134,7 @@
   </con:testStep>
   <con:testStep type="transfer" name="Search String PropertyTransfer" id="b8eff319-bf5d-46ad-9187-3acc5fc15af1">
     <con:settings/>
-    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertyTransfersStep">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false">
         <con:name>searchstring</con:name>
         <con:sourceType>Items</con:sourceType>
@@ -150,7 +150,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - buy" id="4c1c4018-2869-4cbc-82b5-67af0d7943f8">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>buy</con:operation>
       <con:request name="Test Request - buy" id="640d9fee-d7cb-483e-81fb-1ebefd034c20" defaultOutgoingWss="" defaultIncomingWss="">
@@ -211,7 +211,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="33e7d798-d0a7-4c56-872e-3afd1627a033">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" wssPasswordType="" id="57ce8874-7fa1-4aa4-b59c-ae46371b06f0" defaultOutgoingWss="" defaultIncomingWss="">

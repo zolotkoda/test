@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface name="ServiceSoapBinding" bindingName="{http://www.soapui.org/sample/}ServiceSoapBinding" soapVersion="1_1" definition="WSDL-WADL/sample-service.wsdl" xsi:type="con:WsdlInterface" wsaVersion="NONE" id="ab875c18-0dc1-437d-a23d-8e8578216934" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="ServiceSoapBinding" bindingName="{http://www.soapui.org/sample/}ServiceSoapBinding" soapVersion="1_1" definition="WSDL-WADL/sample-service.wsdl" xsi:type="con:WsdlInterface" wsaVersion="NONE" id="ab875c18-0dc1-437d-a23d-8e8578216934">
+  <con:settings id="44f80aaf-27b5-4d35-86b4-70050c0b0f60">
     <con:setting id="ab875c18-0dc1-437d-a23d-8e8578216934fileName">ServiceSoapBinding</con:setting>
   </con:settings>
   <con:endpoints>
@@ -11,7 +11,7 @@
     <con:part>
       <con:url>WSDL-WADL/sample-service.wsdl</con:url>
       <con:content>
-        <wsdl:definitions name="sample" targetNamespace="http://www.soapui.org/sample/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.soapui.org/sample/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+        <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.soapui.org/sample/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="sample" targetNamespace="http://www.soapui.org/sample/">
           <wsdl:types>
             <xsd:schema targetNamespace="http://www.soapui.org/sample/">
               <xsd:element name="searchResponseContent">

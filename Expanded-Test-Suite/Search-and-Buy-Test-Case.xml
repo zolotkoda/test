@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Search and Buy Test Case" searchProperties="true" maxResults="0" id="78441527-271d-4161-8d69-ee5f14de1de3" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Test Case - Search and Buy Test Case
+<con:testCase xmlns:con="http://eviware.com/soapui/config" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Search and Buy Test Case" searchProperties="true" maxResults="0" id="78441527-271d-4161-8d69-ee5f14de1de3">
+  <con:description id="6072bc7b-2068-4570-8ad7-855a1dad8c86">Test Case - Search and Buy Test Case
 
                 This test is the first expanded Test Case.
                 It basically tests our entire MockService by doing the following.
@@ -34,7 +34,7 @@
   </con:testStep>
   <con:testStep type="properties" name="Properties - Username and Password" id="76e9f244-aba6-4a03-8034-381d7263a03b">
     <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:PropertiesStep" saveFirst="true">
       <con:properties>
         <con:property>
           <con:name>Username</con:name>
@@ -53,7 +53,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - login" id="517b00cb-ec52-4fba-8c2d-a8877c640b4a">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>login</con:operation>
       <con:request name="Test Request - login" outgoingWss="" incomingWss="" id="ee581e46-f73d-4097-bc81-32b41e1228b8" defaultOutgoingWss="" defaultIncomingWss="">
@@ -92,7 +92,7 @@
   </con:testStep>
   <con:testStep type="request" name="Test Request - search" id="3793c3b3-7482-46d7-b26e-2851d330deb6">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>search</con:operation>
       <con:request name="Test Request - search" outgoingWss="" incomingWss="" id="064d3e5b-b00b-4c88-8177-03f04fd9a339" defaultOutgoingWss="" defaultIncomingWss="">
@@ -142,7 +142,7 @@ Impress the strags with this amazing cloth!</content>
   </con:testStep>
   <con:testStep type="request" name="Test Request - Buy" id="3f4dd089-a21a-493f-b74f-02c9ce1099eb">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>buy</con:operation>
       <con:request name="Test Request - Buy" outgoingWss="" incomingWss="" id="5e82ed5e-aef5-470f-a8d9-dfafead2ec36" defaultOutgoingWss="" defaultIncomingWss="">
@@ -191,7 +191,7 @@ Impress the strags with this amazing cloth!</content>
   </con:testStep>
   <con:testStep type="request" name="Test Request - logout" id="be283749-dd1a-4fa9-86d0-f29786578587">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="54c9ef0d-5d88-4d1c-a740-04187008f872" defaultOutgoingWss="" defaultIncomingWss="">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:mockOperation name="buy" interface="ServiceSoapBinding" operation="buy" id="bdc87fc9-c4ec-4315-a0d1-723b0fafa0e8" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:mockOperation xmlns:con="http://eviware.com/soapui/config" name="buy" interface="ServiceSoapBinding" operation="buy" id="bdc87fc9-c4ec-4315-a0d1-723b0fafa0e8">
+  <con:settings id="c4add3f9-e064-45ec-b56a-c61b216d3f1b">
     <con:setting id="bdc87fc9-c4ec-4315-a0d1-723b0fafa0e8fileName">buy</con:setting>
   </con:settings>
   <con:dispatchPath>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )

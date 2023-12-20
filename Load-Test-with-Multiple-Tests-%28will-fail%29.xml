@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:loadUiTest name="Load Test with Multiple Tests (will fail)" id="a18f3247-6d60-4584-aebb-472642b78842" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:loadUiTest xmlns:con="http://eviware.com/soapui/config" name="Load Test with Multiple Tests (will fail)" id="a18f3247-6d60-4584-aebb-472642b78842">
+  <con:settings id="bd1d9375-0087-4158-a135-cd85ab66c751">
     <con:setting id="soapUIObjectSourceId">fc3cfb74-e41f-4a86-9308-2be383633755</con:setting>
     <con:setting id="convertedFromLoadTestModelItemId">aec1683a-1e1f-47ae-96ef-5689adc5a81b</con:setting>
     <con:setting id="a18f3247-6d60-4584-aebb-472642b78842fileName">Load-Test-with-Multiple-Tests-%28will-fail%29</con:setting>
   </con:settings>
-  <con1:loadui-project id="08dd4a3e-1bf3-4f79-b12b-6cfa628afe5c" label="Load Test with Multiple Tests (will fail)" xmlns:con1="http://eviware.com/loadui/config">
+  <con1:loadui-project xmlns:con1="http://eviware.com/loadui/config" id="08dd4a3e-1bf3-4f79-b12b-6cfa628afe5c" label="Load Test with Multiple Tests (will fail)">
     <con1:properties>
       <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
       <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -155,7 +155,7 @@
   <con:loadUITestScenario projectId="08dd4a3e-1bf3-4f79-b12b-6cfa628afe5c" scenarioId="44409020-2538-475c-a21d-decc5ebb9221" name="New Scenario" id="2264b1d7-1ee0-4ca8-b675-fb2e06f4f4d1">
     <con:settings/>
   </con:loadUITestScenario>
-  <con:setupScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-  <con:teardownScript xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:setupScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:teardownScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
   <con:reportParameters/>
 </con:loadUiTest>

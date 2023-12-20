@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation action="http://www.soapui.org/sample/search" name="search" bindingOperationName="search" inputName="" isOneWay="false" receivesAttachments="false" sendsAttachments="false" type="Request-Response" id="faec375e-8b92-40e4-a160-da0fc5ef6eac" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:operation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" action="http://www.soapui.org/sample/search" name="search" bindingOperationName="search" inputName="" isOneWay="false" receivesAttachments="false" sendsAttachments="false" type="Request-Response" id="faec375e-8b92-40e4-a160-da0fc5ef6eac">
+  <con:settings id="29bc2236-3b27-4ddd-b1b3-7ec42d4876b1">
     <con:setting id="faec375e-8b92-40e4-a160-da0fc5ef6eacfileName">search</con:setting>
   </con:settings>
   <con:call name="search rq" outgoingWss="" incomingWss="" id="36d27fd1-d96d-439b-8d9a-95baaa5adbb1" defaultOutgoingWss="" defaultIncomingWss="">
